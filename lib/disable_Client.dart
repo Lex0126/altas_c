@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DisableClient extends StatefulWidget {
-  const DisableClient({super.key});
+const DisableClient({super.key});
 
   @override
   State<DisableClient> createState() => _DisableClientState();

@@ -4,6 +4,7 @@ import 'package:altas_c/release_Client.dart';
 import 'package:altas_c/release_Supplier.dart';
 import 'package:altas_c/disable_Client.dart';
 import 'package:altas_c/disable_Supplier.dart';
+import 'package:altas_c/release_Project.dart';
 
 class CustomScreen extends StatefulWidget {
   @override
@@ -128,9 +129,9 @@ class _CustomScreenState extends State<CustomScreen> {
             BottomNavigationBarItem(
               icon: Padding(
                 padding: const EdgeInsets.only(top: 8.0),
-                child: Icon(Icons.chat_bubble_outline, size: 28),
+                child: Icon(Icons.book, size: 28),
               ),
-              label: '',
+              label: 'Altas Proyectos',
             ),
           ],
           onTap: (index) {
@@ -138,6 +139,9 @@ class _CustomScreenState extends State<CustomScreen> {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Release_Client()));
             } else if (index == 1) {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Release_Provider()));
+            }
+            else if (index ==2){
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>Release_project()));
             }
           },
         ),
